@@ -14,7 +14,7 @@ class TestModeBanner extends StatelessWidget {
         Positioned(
           top: 0, left: 0, right: 0,
           child: Container(
-            color: Colors.red.withOpacity(0.8),
+            color: Colors.red.withAlpha(51),
             padding: const EdgeInsets.all(4),
             child: const Text(
               'TEST MODE',

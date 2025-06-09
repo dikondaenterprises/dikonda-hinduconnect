@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'routes.dart';
 import 'providers/auth_provider.dart';
 import 'providers/user_provider.dart';
-import 'routes.dart';
 import 'ui/auth/sign_in_page.dart';
+import 'ui/home/home_page.dart';  // Fix: added home page import
 
 class DevotionalApp extends StatelessWidget {
   const DevotionalApp({super.key});
@@ -33,12 +34,11 @@ class AuthGate extends StatelessWidget {
   Widget build(BuildContext context) {
     final auth = context.watch<AuthProvider>();
     if (auth.isLoggedIn) {
-      // Load user profile
       final uid = auth.currentUser?.uid;
       if (uid != null) {
         context.read<UserProvider>().loadUser(uid);
       }
-      return const MainApp();
+      return const HomePage(); // ✅ fixed MainApp to HomePage
     } else {
       return const SignInPage();
     }

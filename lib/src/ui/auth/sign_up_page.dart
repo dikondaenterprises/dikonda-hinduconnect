@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:your_app/providers/auth_provider.dart';
+import '../../providers/auth_provider.dart';
 
 class SignUpPage extends StatefulWidget {
   const SignUpPage({super.key});
@@ -28,6 +28,7 @@ class _SignUpPageState extends State<SignUpPage> {
     if (msg != null) {
       setState(() { _error = msg; });
     } else {
+      if (!mounted) return;
       Navigator.pushReplacementNamed(context, '/home');
     }
   }

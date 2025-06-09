@@ -35,7 +35,7 @@ class _BookmarkPageState extends State<BookmarkPage> {
     final bookmarkedKeys = _bookmarkBox.keys.where((k) => _bookmarkBox.get(k) == true);
 
     if (bookmarkedKeys.isEmpty) {
-      return const Scaffold(
+      return Scaffold(
         appBar: AppBar(title: Text('Bookmarks')),
         body: Center(child: Text('No bookmarks yet.')),
       );

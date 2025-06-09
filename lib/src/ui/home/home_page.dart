@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:your_app/ui/search/result_page.dart';
-import 'package:your_app/model/content_type.dart';
+import '../../ui/search/result_page.dart';
+import '../../model/content_type.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});

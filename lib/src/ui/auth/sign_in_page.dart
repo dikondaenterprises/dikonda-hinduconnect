@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:your_app/providers/auth_provider.dart';
+import '../../providers/auth_provider.dart';
 
 class SignInPage extends StatefulWidget {
   const SignInPage({super.key});
@@ -24,6 +24,7 @@ class _SignInPageState extends State<SignInPage> {
     if (msg != null) {
       setState(() { _error = msg; });
     } else {
+      if (!mounted) return;
       Navigator.pushReplacementNamed(context, '/home');
     }
   }
