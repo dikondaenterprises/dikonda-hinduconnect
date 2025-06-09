@@ -1,0 +1,53 @@
+name: devotional_flutter_app
+description: A Flutter app showcasing Unicode Stotras and Temple info with offline support.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase
+  firebase_core: ^2.10.0
+  firebase_auth: ^4.6.3
+  cloud_firestore: ^4.7.1
+
+  # State management
+  provider: ^6.0.5
+
+  # HTTP + caching + connectivity
+  http: ^1.4.0
+  path_provider: ^2.0.14
+  connectivity_plus: ^4.0.1
+
+  # Sharing
+  share_plus: ^6.3.0
+
+  # Markdown
+  flutter_markdown: ^0.6.11
+
+  # Carousel
+  carousel_slider: ^4.2.1
+
+  # Local storage
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  shared_preferences: ^2.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/stotras/telugu/
+    - assets/stotras/hindi/
+    - assets/stotras/english/
+    - assets/temples/telangana/
+    - assets/temples/maharashtra/
+    - assets/temples/delhi/

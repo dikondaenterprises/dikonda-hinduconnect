@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "606244576139",
+    "project_id": "dikonda-hinduconnect",
+    "storage_bucket": "dikonda-hinduconnect.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:606244576139:android:72772a4871cc2d76dbed8e",
+        "android_client_info": {
+          "package_name": "com.dikonda.hinduconnect"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6rHS0ScLeiTrHHN_NlVeAUdVxH8gM08g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

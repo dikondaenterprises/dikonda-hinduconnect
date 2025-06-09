@@ -1,0 +1,19 @@
+1. Firebase Configuration
+firebase_options.dart:
+Make sure you’ve run flutterfire configure and placed the generated firebase_options.dart under lib/.
+
+google-services.json (Android) and GoogleService-Info.plist (iOS):
+Placed in their respective platform folders per the Firebase setup guide.
+
+2. Android & iOS Platform Settings
+Internet Permission (Android):
+In android/app/src/main/AndroidManifest.xml:
+
+<uses-permission android:name="android.permission.INTERNET"/>
+
+iOS App Transport Security:
+In ios/Runner/Info.plist add:
+
+<key>NSAppTransportSecurity</key><dict>
+  <key>NSAllowsArbitraryLoads</key><true/>
+</dict>

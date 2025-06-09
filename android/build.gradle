@@ -1,0 +1,29 @@
+buildscript {
+    ext {
+        kotlin_version = '1.9.0' // latest stable as of 2025
+        agp_version = '8.1.0' // latest stable AGP
+    }
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        // START: FlutterFire Configuration
+        classpath 'com.google.gms:google-services:4.3.15'
+        // END: FlutterFire Configuration
+        classpath "com.android.tools.build:gradle:$agp_version"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+plugins {
+  // Add the dependency for the Google services Gradle plugin
+  id 'com.google.gms.google-services' version '4.4.2' apply false
+
+}
